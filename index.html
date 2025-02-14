@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+           *{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        }
+        #container{
+            display: grid;
+            grid-template-columns: repeat( auto-fit , minmax(300px, 1fr));
+            gap: 1rem;
+            text-align: center;
+        }
+        #container>div{
+            border-radius: 10px;
+            background-color:#E6E6FA;
+        }
+        #container>div>.title{
+           font-size: .85rem;
+        }
+        #container>div>.rate{
+            font-size: .9rem;
+            color:yellowgreen;
+        }
+        img{
+            width: 20vw;
+            height: 20vh;
+            mix-blend-mode: multiply;
+            object-fit: contain;
+        }
+        h1{
+            text-align: center;
+        }
+        p{
+            color: #000;
+            font-size: 1rem;
+            padding: .3rem 0;
+            font-weight: 500;
+        }
+        #btn-contain{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            background-color: skyblue;
+        }
+        button{
+            background-color: skyblue;
+            color: #000;
+            padding: .5rem 6rem;
+            font-weight: 400;
+            transition: .4s;
+            vertical-align: bottom;
+            border: none;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: cyan;
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+<body>
+    <div id="btn-contain"></div>
+    <div id="container"></div>
+    <script src="./index.js"></script>
+</body>
+</html>
